@@ -1,6 +1,12 @@
-CC = gcc
+CC     = gcc
 SOURCE = main.c
 TARGET = fconverter
 
+Q      = @
+
 all:
-	$(CC) $(SOURCE) -o $(TARGET)
+	$(Q)$(CC) $(SOURCE) -o $(TARGET)
+    $(Q)echo " CC    Done."
+
+clean:
+	$(Q)rm $(TARGET)
